@@ -1,1 +1,515 @@
-Hello world!
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Welcome to Tao Chen's Homepage</title>
+<meta http-equiv="keywords" content="Tao Chen,NUS,SOC,National University of Singapore,School of Computing"/>
+<meta http-equiv="description" content="Welcome to Tao Chen's Homepage"/>
+<link rel="stylesheet" type="text/css" href="default.css" />
+
+<script src="js/index2.js"></script>
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-91520018-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+</head>
+<body>
+
+<div id="outer">
+	<div id="inner">
+        <div id="header">
+        	<img src="images/profile.png" class="pic"/>
+        	<!--<img src="images/TaoChen2.png" class="pic"/>-->
+            <div id="intro">
+				<p id="name"> Tao CHEN  (陈涛) </p>
+
+				<p>
+          Senior Software Engineer<br>
+          Google DeepMind <br>
+		  Mountain View, CA, USA <br><br>
+		  Email: taochen.nus at gmail dot com <br>
+
+	  <div id="menu">
+          <ul>
+    <li><a onclick="show('about')">Home</a></li>
+    <li><a onclick="show('research')">Research</a></li>
+    <li><a onclick="show('publication')">Publication</a></li>
+    <li><a onclick="show('software')">Software</a></li>
+    <!--<li><a onclick="show('personal')">Personal</a></li>-->
+    <li><a onclick="show('links')">Miscellaneous</a></li>
+  </ul>
+		</div>
+
+
+    <div id="about" style="display:block">
+		<div id="primarycontent">
+			<!-- primary content start -->
+			<div class="post">
+				<div class="header">
+					<h3>Welcome to my research homepage!</h3>
+				</div>
+				<div class="content">
+                <p>I am working at Google DeepMind, and focusing on Natural Language Processing and Information Retrieval.</p>
+                <p>
+                I was a postdoc at the Center for Language and Speech Processing (<a href="http://www.clsp.jhu.edu/" target="_blank">CLSP</a>), Johns Hopkins University (<a href="https://www.jhu.edu/" target="_blank">JHU</a>), working with <a href="http://www.cs.jhu.edu/~mdredze/" target="_blank">Prof Mark Dredze</a>.
+
+                Prior to that,
+                 I obtained my Ph.D from <a href="http://www.comp.nus.edu.sg" target="_blank">School of Computing</a>, National University of Singapore (<a href="http://www.nus.edu.sg" target="_blank">NUS</a>) in April 2016. I was advised by
+                  <a href="http://www.comp.nus.edu.sg/~kanmy" target="_blank">Prof Min-Yen Kan</a> and was affiliated with the Web, Information Retrieval / Natural Language Processing Group (<a href="http://wing.comp.nus.edu.sg" target="_blank">WING</a>). </p>
+
+               
+  <p>
+ My research spans the fields of social media, multimedia, natural language processing, health informatics and applied machine learning. My Ph.D <a href="data/pubs/thesis.pdf" target="_blank">thesis</a> is about analyzing, classifying, modeling and recommending image tweets. During my postdoc in JHU, I was working on social media analysis for <a href="http://www.socialmediaforpublichealth.org/" target="_blank">public health</a> and natural language processing for healthcare.
+  </p>
+
+<br />
+<h3>News:</h3>
+<ul>
+<li>[Mar 2019] Our <a href="https://medinform.jmir.org/2019/1/e13039/">paper</a> on clinical information extraction has been accepted by JMIR Medical Informatics!
+<li>[Aug 2018] Our <a href="https://ajph.aphapublications.org/doi/abs/10.2105/AJPH.2018.304567">paper</a> of studying Twitter Bots and trolls on vaccine debates has been published by American Journal of Public Health. Our work has been covered by over 200 news reports!
+</li>
+<li>[May 2018] Our <a href="http://www.jmir.org/2018/9/e10244/">paper</a> on HPV image tweets analysis has been accepted by the Journal of Medical Internet Research.</li>
+<li>[April 2018] I joined Google AI in Mountain View, CA. 
+</li>
+</ul>
+
+				</div>
+
+			</div>
+
+			<!-- primary content end -->
+
+		</div>
+
+		<div id="secondarycontent">
+
+			<!-- secondary content start -->
+
+			<!--<h3>About Me</h3>-->
+            <br />
+			<div class="content" align="center">
+				<img src="images/google.png" width="120px">
+				<img src="images/jhu.png" width="130px" style="margin-top:-30px">
+                <br /><br />
+                <img src="images/nus.png" width="100px" style="padding:10px">
+			</div>
+
+		</div> <!-- secondary content end -->
+	</div> <!-- end of about-->
+
+    <div id="research" style="display:none">
+    	 <div id="primarycontent">
+    	<p>  Research projects before 2018. Check my latest work at  <a href="https://scholar.google.com/citations?user=KwWiLLUAAAAJ&hl=en" target="_blank">Google Scholar</a>. </p> </div>
+
+    <div id="mm13">
+    <div id="primarycontent">
+			<!-- primary content start -->
+			<div class="post">
+				<div class="header">
+					<h3>Image Tweets Analysis, Categorization and Modeling</h3>
+				</div>
+				<div class="content">
+ <p>Image tweet, the tweet that embeds an image, is a popular form of communication in microblog platforms. I conduct comparative studies on image tweets from Twitter and Chinese Weibo [<a href="data/pubs/thesis.pdf" target="_blank">Ph.D Thesis</a>], categorize the correlation of the image and its accompanying text [<a href="data/pubs/mm13.pdf" target="_blank">MM'13</a>], model the generative process of image tweets [<a href="data/pubs/velda_aaai15.pdf" target="_blank">AAAI'15</a>], and recommend interesting image tweets to users [<a href="data/pubs/mm16.pdf">MM'16</a>] [<a href="data/pubs/mm17.pdf">MM'17</a>]. </p>
+ </div> <!--end of content-->
+
+
+ </div> <!--end of post -->
+ </div> <!--end of primarycontent -->
+
+ <div id="secondarycontent">
+			<!--<h3>About Me</h3>-->
+            <br /><br /><br />
+			<div class="content" align="center">
+ 	<img src="images/image_tweet.png" width="100px"/>
+                <br /><br />
+
+			</div>
+       </div><!-- secondary content start -->
+
+ </div> <!-- end of mm13-->
+
+ <div id="lsm">
+    <div id="primarycontent">
+			<!-- primary content start -->
+			<div class="post">
+				<div class="header">
+					<h3>Retweets Analysis and Prediction</h3>
+				</div>
+				<div class="content">
+ <p>What makes a tweet worth sharing? We study the content of tweets to uncover linguistic tendencies of shared microblog posts (retweets). We build a classifier to categorize tweets into four pre-defined types and build a model to predict the retweetability of a tweet [<a href="data/pubs/lsm12.pdf">LSM'12</a>].</p>
+
+ </div> <!--end of content-->
+
+ </div> <!--end of post -->
+ </div> <!--end of primarycontent -->
+
+ <div id="secondarycontent">
+			<!--<h3>About Me</h3>-->
+            <br /><br /><br />
+			<div class="content" align="center">
+ 	<img src="images/retweet.jpg" width="100px"/>
+                <br /><br />
+
+			</div>
+       </div><!-- secondary content start -->
+
+ </div> <!-- end of lsm-->
+
+
+ <div id="osn">
+    <div id="primarycontent">
+			<!-- primary content start -->
+			<div class="post">
+				<div class="header">
+					<h3>User Behaviour Analysis across Multiple Social Networks</h3>
+				</div>
+				<div class="content">
+ <p>We study how users of multiple online social networks (OSNs) employ and share information by studying a common user pool that use 6 OSNs – Flickr, Google+, Instagram, Tumblr, Twitter, and YouTube. We explore and analyse the factors that affect user behaviour. In particular, we take a temporal and topical approach in studying the sharing behaviour of users, and we show how users exhibit distinct patterns on different networks [<a href="data/pubs/asonam15.pdf">ASOMAN'15</a>].</p>
+
+ </div> <!--end of content-->
+
+
+ </div> <!--end of post -->
+ </div> <!--end of primarycontent -->
+
+ <div id="secondarycontent">
+			<!--<h3>About Me</h3>-->
+            <br /><br /><br />
+			<div class="content" align="center">
+ 	<img src="images/social_networks.png" width="100px"/>
+                <br /><br />
+
+			</div>
+       </div><!-- secondary content start -->
+
+ </div> <!-- end of osn-->
+
+
+  <div id="trirank">
+    <div id="primarycontent">
+			<!-- primary content start -->
+			<div class="post">
+				<div class="header">
+					<h3>Recommendation</h3>
+				</div>
+				<div class="content">
+ <p>We explore the rich evidence source of aspects in user reviews to improve top-N recommendation. By extracting aspects from textual reviews, we enrich the user–item binary relation to a user–item–aspect ternary relation. We model the ternary relation as a heterogeneous tripartite graph, casting the recommendation task as one of vertex ranking. We devise a generic algorithm for ranking on tripartite graphs — TriRank — and specialize it for personalized recommendation [<a href="data/pubs/cikm15.pdf">CIKM'15</a> ] . </p>
+
+ </div> <!--end of content-->
+
+
+ </div> <!--end of post -->
+ </div> <!--end of primarycontent -->
+
+ <div id="secondarycontent">
+            <br /><br /><br />
+			<div class="content" align="center">
+ 	<img src="images/recommended_stamp.jpg" width="100px"/>
+                <br /><br />
+
+			</div>
+       </div><!-- secondary content start -->
+
+ </div> <!-- end of osn-->
+
+ <div id="wordnews">
+    <div id="primarycontent">
+			<!-- primary content start -->
+			<div class="post">
+				<div class="header">
+					<h3>Language Learning</h3>
+				</div>
+				<div class="content">
+ <p>We propose <i>WordNews</i> a web browser extension that allows readers to learn a second language vocabulary while reading news online. Injected tooltips allow readers to look up selected vocabulary and give interactive tests to assess vocabulary mastery. In particular, we propose techniques for word sense disambigution (WSD) to aid transation quality and constructing appropriate distractors for multiple-choice word mastery tests [<a href="data/pubs/nlp-tea15.pdf">NLP-TEA'15</a>] [<a href="data/pubs/nlp-tea16.pdf">NLP-TEA'16</a>].</p>
+
+<p>Our <a href="wordnews.html" target="_blank">WordNews</a> project was funded by <a href="https://www.comp.nus.edu.sg/entrepreneurship/vasco.html" target="_blank">VaSCo</a> (Validating Startup Concept) award (S$10,000) from National University of Singapore!
+</p>
+
+ </div> <!--end of content-->
+
+
+
+ </div> <!--end of post -->
+ </div> <!--end of primarycontent -->
+
+ <div id="secondarycontent">
+			<!--<h3>About Me</h3>-->
+            <br /><br /><br />
+			<div class="content" align="center">
+ 	<img src="images/words.jpg" width="100px"/>
+                <br /><br />
+
+			</div>
+       </div><!-- secondary content start -->
+
+ </div> <!-- end of wordnews-->
+
+
+ <div id="sms">
+    <div id="primarycontent">
+			<!-- primary content start -->
+			<div class="post">
+				<div class="header">
+					<h3>NUS SMS Corpus</h3>
+				</div>
+				<div class="content">
+<p>I was engaged in a live project that collects SMS Messages for a public research corpus. <!--SMS Messages are now a ubiquitous form of communication, however, there is precious little public corpora that researchers can study to understand this phenomenon.--> As of May 2015 , we have collected 45,718 English SMS and 31,465 Chinese SMS. To the best of our knowledge, it is the largest English and Chinese SMS corpus in the public domain [<a href="data/pubs/lre12.pdf" target="_blank">LRE'13</a>]. </p>
+
+Check our <a href="https://github.com/kite1988/nus-sms-corpus">GitHub</a> page to download the dataset.
+
+ <!--<p>To know more about the corpus, you may go to the corpus <a href="http://wing.comp.nus.edu.sg:8080/SMSCorpus" target="_blank">website</a> and read our journal [<a href="data/pubs/lre12.pdf" target="_blank">paper</a>].
+ We also need your <a href="http://wing.comp.nus.edu.sg:8080/SMSCorpus/contribution.jsp" target="_blank">contribution</a> of SMS messages to enlarge the corpus! Thank you!</p>
+
+ <p><i>Due to some technical problems, the corpus website is temporally unavailable. Please check our github <a href="https://github.com/kite1988/nus-sms-corpus">site</a> instead. </i></p>-->
+
+ </div> <!--end of content-->
+
+ </div> <!--end of post -->
+ </div> <!--end of primarycontent -->
+
+ <div id="secondarycontent">
+			<!--<h3>About Me</h3>-->
+            <br /><br /><br />
+			<div class="content" align="center">
+ 	<img src="images/app_logo.gif" width="100px"/>
+                <br /><br />
+
+			</div>
+       </div><!-- secondary content start -->
+
+ </div> <!-- end of sms-->
+  </div> <!--end of research-->
+
+
+
+     <div id="publication" style="display:none">
+         <div id="primarycontent">
+		<div class="publication">
+	<p>  Check my latest publications at  <a href="https://scholar.google.com/citations?user=KwWiLLUAAAAJ&hl=en" target="_blank">Google Scholar</a>. </p>
+
+    <ul>
+
+    	<li>
+    		<b>Tao Chen</b>, Mark Dredze, Jonathan P Weiner, Leilani Hernandez, Joe Kimura, Hadi Kharrazi (2019). Extraction of Geriatric Syndromes From Electronic Health Record Clinical Notes: Assessment of Statistical Natural Language Processing Methods. JMIR Medical Informatics (JMI), 2019;7(1): e13039. [ <a href="https://medinform.jmir.org/2019/1/e13039/"> Paper </a>]
+    	</li>
+
+    	<li>
+    		<b>Tao Chen</b>, Mark Dredze, Jonathan P Weiner, Leilani Hernandez, Joe Kimura, Hadi Kharrazi (2019). Extraction of Geriatric Syndromes From Electronic Health Record Clinical Notes: Assessment of Statistical Natural Language Processing Methods. JMIR Medical Informatics (JMI), 2019;7(1): e13039. [ <a href="https://medinform.jmir.org/2019/1/e13039/"> Paper </a>]
+    	</li>
+
+      <li>Yuki Lama, <b>Tao Chen*</b>, Mark Dredze, Amelia Jamison, Sandra Crouse Quinn, David A Broniatowski (2018). Discordance between HPV Twitter Images and Disparities in HPV Risk and Disease: Mixed Methods Analysis. Journal of Medical Internet Research (JMIR), 2018; 20(9): e10244 (*corresponding author; IF: 4.671). [ <a href="http://www.jmir.org/2018/9/e10244/"> Paper </a>]
+
+      <li> David A Broniatowski, Amelia M Jamison, SiHua Qi, Lulwah AlKulaib, <b>Tao Chen</b>, Adrian Benton, Sandra C Quinn, Mark Dredze (2018). Weaponized Health Communication: Twitter Bots and Russian Trolls Amplify the Vaccine Debate. American journal of public health, 2018, pp. e1-e7. (IF: 4.380] [ <a href="https://ajph.aphapublications.org/doi/abs/10.2105/AJPH.2018.304567">Paper</a> ]
+      </li>
+
+    	<li><b>Tao Chen</b> and Mark Dredze. Vaccine Images on Twitter: Analysis of What Images are Shared. Journal of Medical Internet Research (JMIR), 2018; 20(4):e130. (IF: 4.671).
+    		[ <a href='http://www.jmir.org/2018/4/e130/'>Paper</a> ]
+    	</li>
+
+    	<li>
+             Francesco Gelli, Xiangnan He, <b>Tao Chen</b> and Tat-Seng Chua (2017). How Personality Affects our Likes: Towards a Better Understanding of Actionable Image.  In Proceedings of the 25th ACM International Conference on Multimedia (MM'17), Mountain View, CA, USA. [ <a href="data/pubs/mm17.pdf">Paper</a> ] [ <a href="https://www.scribd.com/book/354763934/How-Personality-Affects-our-Likes-Towards-a-Better-Understanding-of-Actionable-Images">Slides</a>] [ <a href="http://lms.comp.nus.edu.sg/sites/default/files/news-attachments/14-GelliFrancesco_Poster.pdf">Poster</a>] [ <a href="https://github.com/GelliFrancesco/CAFM">Code, Dataset</a> ]
+    	</li>
+
+
+    	<li>
+             <b>Tao Chen</b>, Xiangnan He and Min-Yen Kan (2016). Context-aware Image Tweet Modelling and Recommendation. In Proceedings of the 24th ACM International Conference on Multimedia (MM'16), Amsterdam, The Netherlands. <br>[ <a href="data/pubs/mm16.pdf">Paper</a> ]
+             [ <a href="https://speakerdeck.com/kite1988/context-aware-image-tweet-modelling-and-recommendation" target="_blank">Slides</a> ] [ <a href="data/pubs/poster_mm16.pdf" target="_blank">Poster</a> ]  [ <a href="https://github.com/kite1988/famf targe="_blank">Code, Dataset</a> ]
+    	</li>
+
+    	<li>
+             <b>Tao Chen</b> (2016). Analyzing Image Tweets in Microblogs. Ph.D thesis. National Univeristy of Singapore.
+             [ <a href="data/pubs/thesis.pdf" target="_blank">Thesis</a> ]
+    	</li>
+
+		<li>
+		  Hong Jin Kang, <b>Tao Chen</b>, Muthu Kumar Chandrasekaran and Min-Yen Kan (2016). A Comparison of Word Embeddings for English and Cross-Lingual Chinese Word Sense Disambiguation. In Proceedings of COLING Workshop on Natural Language Processing Techniques for Educational Applications (NLP-TEA'16). <br>[ <a href="data/pubs/nlp-tea16.pdf" target="_blank">Paper</a>] [ <a href="https://kanghj.github.io/english_chinese_news_clwsd_dataset/">Dataset</a> ]
+		 </li>
+
+		 <li>
+       		<b>Tao Chen</b>, Naijia Zheng, Yue Zhao, Muthu Chandrasekaran and Min-Yen Kan (2015). Interactive Second Language Learning from News Websites. In Proceedings of ACL Workshop on Natural Language Processing Techniques for Educational Applications (NLP-TEA'15). <br> [ <a href="data/pubs/nlp-tea15.pdf">Paper</a> ] [  <a href="data/slides/nlp-tea15.pdf">Slides</a> ] [ <a href="https://youtu.be/70UjolxI_rg">Video Demo (via YoutTube)</a> ] [ <a href="https://chrome.google.com/webstore/detail/wordnews/hbellpimdlanffbgemakfohcbaepogoh">Software</a> ]
+       	</li>
+
+
+ 		<li>
+       		Bang Hui Lim, Dongyuan Lu, <b>Tao Chen</b> and Min-Yen Kan (2015). #mytweet via Instagram: Exploring User Behaviour across Multiple Social Networks. In Proceedings of  IEEE/ACM International Conference on Advances in Social Networks Analysis and Mining (ASONAM'15). [ <a href="data/pubs/asonam15.pdf">Paper</a> ] [ <a href="https://github.com/kite1988/aboutme">Dataset</a> ] [ <a href="data/slides/asonam_presentation.pdf">Slides</a> ]
+		</li>
+
+
+		<li>
+       		Xiangnan He, <b>Tao Chen</b>, Min-Yen Kan  and Xiao Chen (2015). TriRank: Review-aware Explainable Recommendation by Modeling Aspects. In Proceedings of ACM International Conference on Information and Knowledge Management (CIKM'15). <br> [ <a href="data/pubs/cikm15.pdf">Paper</a> ] [ <a href="data/slides/cikm15.pdf">Slides</a> ]
+		</li>
+
+
+		<li>
+             <b>Tao Chen</b>, Hany M. SalahEldeen, Xiangnan He, Min-Yen Kan and Dongyuan Lu (2015). VELDA: Relating an Image Tweet’s Text and Images. In Proceedings of the 29th AAAI Conference on Artificial Intelligence (AAAI'15), Austin, USA. <br> [ <a href="data/pubs/velda_aaai15.pdf" target="_blank">Paper</a> ] [ <a href="data/pubs/poster_aaai15.pdf" target="_blank">Poster</a> ]
+			 [ <a href="https://github.com/kite1988/velda" target="_blank">Code, Dataset</a> ]
+  		</li>
+
+
+  		<li>
+             <b>Tao Chen</b>, Dongyuan Lu, Min-Yen Kan and Peng Cui (2013). Understanding and Classifying Image Tweets. In Proceedings of the 21st ACM International Conference on Multimedia (MM'13), Barcelona, Spain. [ <a href="data/pubs/mm13.pdf" target="_blank">Paper</a> ] [ <a href="data/pubs/poster_mm13.pdf" target="_blank">Poster</a> ][ <a href="https://github.com/kite1988/visual-image-tweets" target="_blank">Dataset</a> ]
+		</li>
+
+
+		<li>
+             <b>Tao Chen</b> and Min-Yen Kan (2013). Creating a Live, Public Short Message Service Corpus: The NUS SMS Corpus. <i>Language Resources and Evaluation</i>, 47(2)(2013), pages 299--355. <a href="http://www.springerlink.com/openurl.asp?genre=article&id=doi:10.1007/s10579-012-9197-9 ">[ DOI:10.1007/s10579-012-9197-9 ]</a>
+			<a href="data/pubs/lre12.pdf">[ Local copy (.pdf)</a> ]
+		</li>
+
+		<li>
+             Aobo Wang, <b>Tao Chen</b> and Min-Yen Kan (2012). Re-tweeting from a Linguistic Perspective. In Proceedings of the Workshop on Languages in Social Media (LSM '12), NAACL-HLT, Montreal. [ <a href="data/pubs/lsm12.pdf" target="_blank">Paper</a> ]
+		</li>
+
+
+    </ul>
+
+
+    </div>
+   </div> <!--end of primary content-->
+  </div> <!--end of publication-->
+
+
+
+    <div id="software" style="display:none">
+
+
+    <div id="dblp">
+    <div id="primarycontent">
+			<!-- primary content start -->
+			<div class="post">
+				<div class="header">
+					<h3><a href="https://github.com/kite1988/dblp-parser" target="_blank">DBLP XML Parser</a></h3>
+				</div>
+				<div class="content">
+ <p>A Java program that parses <a href="http://dblp.uni-trier.de/xml"/>dblp.xml</a> and stores inproceedings into mysql database. </p>
+
+<p> In early 2010, I implemented this program for my undergraduate thesis, and wrote a post in my Chinese techinical blog.
+Since then, I received  a lot of emails, requesting for the code.  Of course, I emailed them the code:) </p>
+
+<p>
+To make this program benifit more people, especially English speakers who will never be able to search my Chinese blog, I released the code in <a href="http://code.google.com/p/dblp-parser/" target="_blank">Google Code</a> and recently transferred to <a href="https://github.com/kite1988/dblp-parser" target="_blank">Github</a>. Meanwhile, I am happy to receive comments, suggestions, and bug reports from the world.
+</p>
+ </div> <!--end of content-->
+
+ </div> <!--end of post -->
+ </div> <!--end of primarycontent -->
+
+ <div id="secondarycontent">
+            <br /><br /><br />
+			<div class="content" align="center">
+ 	<img src="images/dblp.png" width="100px"/>
+                <br /><br />
+
+			</div>
+       </div><!-- secondary content start -->
+
+ </div> <!-- end of dblp-->
+
+ <div id="sms_collection">
+    <div id="primarycontent">
+			<!-- primary content start -->
+			<div class="post">
+				<div class="header">
+					<h3><a href="https://play.google.com/store/apps/details?id=edu.nus.sms.collection" target="_blank">SMS Collection for Corpus</a></h3>
+				</div>
+				<div class="content">
+ <p>An android <a href="https://play.google.com/store/apps/details?id=edu.nus.sms.collection" target="_blank">app</a> that backs up user's SMS messages from phone to his/her Gmail.
+  </p>
+  <p>
+ While this app was originally implemented to faciliate users to contribute SMS messages to our <a href="http://wing.comp.nus.edu.sg:8080/SMSCorpus/">NUS SMS Corpus</a>, it functions purely as a backup software, sending SMS to user's Gmail as draft emails. </p>
+
+ <p>No worries about the privacy issue. On one hand, the app automatically encrypts sensitive information (e.g., emails, phone numbers) in messages . On the other hand, the app does not send the messages directly. We leave the decision to users to send the draft email to us or not.  </p>
+
+ </div> <!--end of content-->
+
+ </div> <!--end of post -->
+ </div> <!--end of primarycontent -->
+
+ <div id="secondarycontent">
+			<!--<h3>About Me</h3>-->
+            <br /><br /><br />
+			<div class="content" align="center">
+ 	<img src="images/app_logo.gif" width="100px"/>
+                <br /><br />
+
+			</div>
+       </div><!-- secondary content start -->
+
+ </div> <!-- end of sms collection-->
+
+  </div> <!--end of software-->
+
+
+
+  <div id="links" style="display:none">
+		<div id="primarycontent">
+			<!-- primary content start -->
+			<div class="post">
+
+			<div class="header"><h3>Personal</h3></div>
+			<div class="content">
+			<p> I like sports. Previously I played table tennis and badminton regularly. More recently I spent more time in the gym than playing ball games. </p>
+			<p>
+			I love travelling and have been to over 10 countries. When I am in a new place, I like viewing the landscape and people by my eye and camera， as well as visiting museums to know the history, culture and art in a documental way.
+			</p>
+
+			</div>
+
+
+            <div class="header">
+					<h3>Slides</h3>
+				</div>
+				<div class="content">
+                <p>
+                Here are my conference and internship debrief given in group meeting.
+                 <ul>
+                 <li><a href="data/slides/InternshipDebrief.pdf" target="_blank"> Internship in Google New York 2013</a> </li>
+                 <li><a href="data/slides/TaoChen_MM_Debrief.pdf" target="_blank">ACM Multimedia 2013</a></li>
+                 <li><a href="data/slides/TaoChen_AAAI_Debrief.pdf" target="_blank">AAAI 2015</a></li>
+                 <li><a href="data/slides/TaoChen_ASONAM_Debrief.pdf" target="_blank">ASONAM 2015</a></li>
+                 </ul>
+                 </p>
+                 </div>
+
+
+				<div class="header">
+					<h3>Links</h3>
+				</div>
+				<div class="content">
+                <p>
+                 <ul>
+                 <li><a href="SoC_Conference_Ranking.html" target="_blank"> Conference Ranking</a>, National University of Singapore</li>
+    <li><a href="SoC_Journal_Ranking.html" target="_blank">Journal Ranking</a>, National University of Singapore</li>
+
+    <li><a href="http://www.cs.rochester.edu/~tetreaul/conferences.html" target="_blank">NLP Conference Calendar</a></li>
+    <!--<li><a href="http://www.52nlp.cn/" target="_blank">52nlp</a></li>
+    <li style='opacity:0'><a href="missing.html">My citations are missing in Google Scholar</a></li>-->
+  </ul>
+</p>
+				</div>
+
+
+
+
+			</div>
+
+			<!-- primary content end -->
+
+		</div>
+
+	</div> <!-- end of link-->
+
+		<div id="footer">
+            Copyright @ Tao Chen 2011-2023.
+Last updated: Mar 14, 2023</div>
+
+	</div> <!-- end of inner-->
+</div> <!-- end of outer-->
+</body>
+</html>
